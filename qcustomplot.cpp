@@ -11890,8 +11890,9 @@ void QCPColorGradient::loadPreset(GradientPreset preset)
       setColorStopAt(1.0/10.0, QColor(50,136,189));
       setColorStopAt(0, QColor(94,79,162));
       break;
-    case cbCluster:
-      setColorInterpolation(ciHSV);
+    case cbCluster9:
+      setColorInterpolation(ciRGB);
+	  setLevelCount(9);
       setColorStopAt(1, QColor(228,26,28));
       setColorStopAt(7.0/8.0, QColor(55,126,184));
       setColorStopAt(6.0/8.0, QColor(77,175,74));
@@ -11902,6 +11903,69 @@ void QCPColorGradient::loadPreset(GradientPreset preset)
       setColorStopAt(1.0/8.0, QColor(247,129,191));
       setColorStopAt(0, QColor(153,153,153));
       break;
+    case cbCluster8:
+      setColorInterpolation(ciRGB);
+	  setLevelCount(8);
+      setColorStopAt(1, QColor(228,26,28));
+      setColorStopAt(6.0/7.0, QColor(55,126,184));
+      setColorStopAt(5.0/7.0, QColor(77,175,74));
+      setColorStopAt(4.0/7.0, QColor(152,78,163));
+      setColorStopAt(3.0/7.0, QColor(255,127,0));
+      setColorStopAt(2.0/7.0, QColor(255,255,51));
+      setColorStopAt(1.0/7.0, QColor(166,86,40));
+      setColorStopAt(0, QColor(247,129,191));
+      break;
+    case cbCluster7:
+      setColorInterpolation(ciRGB);
+	  setLevelCount(7);
+      setColorStopAt(1, QColor(228,26,28));
+      setColorStopAt(5.0/6.0, QColor(55,126,184));
+      setColorStopAt(4.0/6.0, QColor(77,175,74));
+      setColorStopAt(3.0/6.0, QColor(152,78,163));
+      setColorStopAt(2.0/6.0, QColor(255,127,0));
+      setColorStopAt(1.0/6.0, QColor(255,255,51));
+      setColorStopAt(0, QColor(166,86,40));
+      break;	  
+    case cbCluster6:
+      setColorInterpolation(ciRGB);
+	  setLevelCount(6);
+      setColorStopAt(1, QColor(228,26,28));
+      setColorStopAt(4.0/5.0, QColor(55,126,184));
+      setColorStopAt(3.0/5.0, QColor(77,175,74));
+      setColorStopAt(2.0/5.0, QColor(152,78,163));
+      setColorStopAt(1.0/5.0, QColor(255,127,0));
+      setColorStopAt(0, QColor(255,255,51));
+      break;
+    case cbCluster5:
+      setColorInterpolation(ciRGB);
+	  setLevelCount(5);
+      setColorStopAt(1, QColor(228,26,28));
+      setColorStopAt(3.0/4.0, QColor(55,126,184));
+      setColorStopAt(2.0/4.0, QColor(77,175,74));
+      setColorStopAt(1.0/4.0, QColor(152,78,163));
+      setColorStopAt(0, QColor(255,127,0));
+      break;
+    case cbCluster4:
+      setColorInterpolation(ciRGB);
+	  setLevelCount(4);
+      setColorStopAt(1, QColor(228,26,28));
+      setColorStopAt(2.0/3.0, QColor(55,126,184));
+      setColorStopAt(1.0/3.0, QColor(77,175,74));
+      setColorStopAt(0, QColor(152,78,163));
+      break;
+    case cbCluster3:
+      setColorInterpolation(ciRGB);
+	  setLevelCount(3);
+      setColorStopAt(1, QColor(228,26,28));
+      setColorStopAt(1.0/2.0, QColor(55,126,184));
+      setColorStopAt(0, QColor(77,175,74));
+      break;
+    case cbCluster2:
+      setColorInterpolation(ciRGB);
+	  setLevelCount(2);
+      setColorStopAt(1, QColor(228,26,28));
+      setColorStopAt(0, QColor(55,126,184));
+      break;	  
   case vSpectral:
       setColorInterpolation(ciHSV);
       setColorStopAt(0.0/64.0, QColor(0,0,0));

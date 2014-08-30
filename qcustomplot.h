@@ -1941,12 +1941,18 @@ public:
                         ,cbRdYlGn
                         ,cbSpectral
 
-                        //cluster schemes (8 subdivisions)
-                        //all values for cluster maps should be divided by 8
-                        ,cbCluster
+                        //cluster schemes (number after name is number of clusters)
+                        ,cbCluster9
+						,cbCluster8
+						,cbCluster7
+						,cbCluster6
+						,cbCluster5
+						,cbCluster4
+						,cbCluster3
+						,cbCluster2
 
                         //A special spectral class, based on a previous publication
-                        //in my group
+                        //in my group (this is based partially on matlab jet)
                         ,vSpectral  
 					  };
   Q_ENUMS(GradientPreset)
