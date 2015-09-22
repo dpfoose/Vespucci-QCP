@@ -14,8 +14,7 @@ VERSION = 1.3.1
 !macx: TARGET = qcustomplot
 macx: TARGET = QCustomPlot #using customary capitalization for Frameworks
 CONFIG(debug, debug|release) {
-  !macx: TARGET = $$join(TARGET,,,d) # if compiling in debug mode, append a "d" to the library name
-  macx: TARGET = $$join(TARGET,,,-Debug)
+  macx: TARGET = $$join(TARGET,,,d) # if compiling in debug mode, append a "d" to the library name
   QMAKE_TARGET_PRODUCT = "Vespucci-QCP (debug mode)"
   QMAKE_TARGET_DESCRIPTION = "Plotting library for Qt (debug mode)"
 } else {
