@@ -24,5 +24,5 @@ CONFIG(debug, debug|release) {
 QMAKE_TARGET_COMPANY = "www.qcustomplot.com (QCP) and Wright State University (cb* color schemes)"
 QMAKE_TARGET_COPYRIGHT = "Copyright (C) by Emanuel Eichhammer (QCP) and Wright State University (cb* color schemes)"
 
-SOURCES += ../../qcustomplot.cpp
-HEADERS += ../../qcustomplot.h
+SOURCES += qcustomplot.cpp
+HEADERS += qcustomplot.h
