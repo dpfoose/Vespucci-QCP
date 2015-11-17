@@ -11,6 +11,11 @@ CONFIG += shared debug_and_release build_all
 macx: CONFIG += lib_bundle
 VERSION = 1.3.1
 
+installHeader.path = $PWD/include/
+installHeader.files = qcustomplot.h
+target.path = bin/
+INSTALLS += target installHeader
+
 !macx: TARGET = qcustomplot
 macx: TARGET = QCustomPlot #using customary capitalization for Frameworks
 CONFIG(debug, debug|release) {
