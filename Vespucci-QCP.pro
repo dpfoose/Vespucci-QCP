@@ -11,6 +11,11 @@ CONFIG += shared debug_and_release build_all
 macx: CONFIG += lib_bundle
 VERSION = 1.3.1
 
+installHeader.path = include/
+installHeader.files = qcustomplot.h
+target.path = lib/
+INSTALLS += target installHeader
+
 !macx: TARGET = qcustomplot
 macx: TARGET = QCustomPlot #using customary capitalization for Frameworks
 CONFIG(debug, debug|release) {
@@ -24,5 +29,5 @@ CONFIG(debug, debug|release) {
 QMAKE_TARGET_COMPANY = "www.qcustomplot.com (QCP) and Wright State University (cb* color schemes)"
 QMAKE_TARGET_COPYRIGHT = "Copyright (C) by Emanuel Eichhammer (QCP) and Wright State University (cb* color schemes)"
 
-SOURCES += ../../qcustomplot.cpp
-HEADERS += ../../qcustomplot.h
+SOURCES += qcustomplot.cpp
+HEADERS += qcustomplot.h
