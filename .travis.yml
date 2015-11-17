@@ -16,4 +16,4 @@ addons:
 script:
     - qmake -qt=qt5
     - make
-    - make PREFIX=~/ install
+    - make install
