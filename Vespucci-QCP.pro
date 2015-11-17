@@ -13,7 +13,7 @@ VERSION = 1.3.1
 
 installHeader.path = include/
 installHeader.files = qcustomplot.h
-target.path = bin/
+target.path = lib/
 INSTALLS += target installHeader
 
 !macx: TARGET = qcustomplot
